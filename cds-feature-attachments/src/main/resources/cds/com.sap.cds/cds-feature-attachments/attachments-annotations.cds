@@ -24,14 +24,15 @@ annotate Attachments with @UI: {
     HeaderInfo: {
         $Type         : 'UI.HeaderInfoType',
         TypeName      : '{i18n>attachment}',
-        TypeNamePlural: '{i18n>attachments}',
+        TypeNamePlural: '{i18n>attachments}'
     },
     LineItem  : [
         {Value: content},
         {Value: status},
         {Value: createdAt},
         {Value: createdBy},
-        {Value: note}
+        {Value: note},
+        {Value: fileName}
     ]
 } {
     note       @(title: '{i18n>attachment_note}');
